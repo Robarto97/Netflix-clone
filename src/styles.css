@@ -6,7 +6,6 @@ html {
 }
 .App {
   background-color: black;
-  /* min-height: 50vw; */
 }
 #logo {
   width: 10%;
@@ -18,7 +17,6 @@ html {
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
-  /* z-index: 999; */
 }
 #login {
   text-decoration: none;
@@ -31,15 +29,18 @@ html {
 }
 
 .top {
-  min-height: 35vw;
+  height: 100vh;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/a6dc76f7-1ca4-4a7b-815a-b5901602d106/BG-en-20220912-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-  border-bottom: 8px gray solid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 10px #222 solid;
 }
 .black {
   position: absolute;
   width: 100%;
   background-color: black;
-  height: 40vw;
+  height: 100vh;
   top: 0;
   left: 0;
   opacity: 0.4;
@@ -91,7 +92,102 @@ html {
   background-color: red;
 }
 
-
 /* Content */
 
+.content {
+  background-color: black;
+  color: white;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 3rem 20%;
+  gap: 3rem;
+  border-bottom: 8px #222 solid;
+}
+.item .text {
+  height: 100%;
+  width: 55%;
+}
+.item .text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
+.item .text p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.item .imageWrapper {
+  position: relative;
+  width: 45%;
+}
+.item .imageWrapper img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.item .imageWrapper .animation {
+  position: absolute;
+  top: 21%;
+  left: 13%;
+  width: 73%;
+}
+.item .imageWrapper .animation video {
+  width: 100%;
+}
+
+.story-card {
+  position: absolute;
+  display: flex;
+  background-color: black;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.75rem;
+  width: 60%;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.story-card .story-card-image {
+  width: 20%;
+}
+.story-card .story-card-image img {
+  width: 100%;
+}
+.story-card .story-card-text h2 {
+  font-weight: bold;
+  line-height: 1.5;
+}
+.story-card .story-card-text p {
+  color: #0071eb;
+  font-size: 0.9rem;
+}
+.story-card .story-card-icon{
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    width: 3rem;
+    height: 3.5rem;
+}
+
+.item .imageWrapper .second{
+    top: 11%;
+    left: 19%;
+    width: 63%;
+}

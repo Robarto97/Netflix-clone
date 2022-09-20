@@ -2,6 +2,7 @@ import "./reset.css";
 import "./styles.css";
 import Header from "./Header";
 import HeadInfo from "./HeadInfo";
+import Content from "./Content";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
         <Header />
         <HeadInfo />
       </div>
-      
+      <Content />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Header from "./Header";
 import HeadInfo from "./HeadInfo";
 import Content from "./Content";
 import Questions from "./Questions";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       </div>
       <Content />
       <Questions />
+      <Footer />
     </div>
   );
 };

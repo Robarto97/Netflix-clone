@@ -257,3 +257,43 @@ html {
 .questions-container .questions .question button:focus > svg {
   transform: translateY(-50%);
 }
+
+/* Footer */
+
+.footer p,
+.footer p a,
+.footer ul li a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.footer {
+  width: 50%;
+  margin: 4rem auto 0;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+
+.footer .footer-info {
+  font-size: 1rem;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.footer .links .link {
+  width: 20%;
+}
+
+.footer p a:hover,
+.footer .links .link a:hover {
+  text-decoration: underline;
+}

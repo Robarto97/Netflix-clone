@@ -3,6 +3,7 @@ import "./styles.css";
 import Header from "./Header";
 import HeadInfo from "./HeadInfo";
 import Content from "./Content";
+import Questions from "./Questions";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <HeadInfo />
       </div>
       <Content />
+      <Questions />
     </div>
   );
 };

@@ -179,15 +179,81 @@ html {
   color: #0071eb;
   font-size: 0.9rem;
 }
-.story-card .story-card-icon{
-    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
-    background-size: 100%;
-    width: 3rem;
-    height: 3.5rem;
+.story-card .story-card-icon {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  width: 3rem;
+  height: 3.5rem;
 }
 
-.item .imageWrapper .second{
-    top: 11%;
-    left: 19%;
-    width: 63%;
+.item .imageWrapper .second {
+  top: 11%;
+  left: 19%;
+  width: 63%;
+}
+/* Questions */
+
+.questions-container {
+  text-align: center;
+  padding: 3rem 0;
+  border-bottom: 10px #222 solid;
+}
+
+.questions-container h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: white;
+}
+.questions-container .questions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 45%;
+  margin: 3rem auto 0;
+}
+.questions-container .questions .question {
+  position: relative;
+}
+
+.questions-container .questions .question button {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-color: #303030;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.questions-container .questions-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.questions-container .questions .question button svg {
+  fill: white;
+  height: 1.25rem;
+  position: absolute;
+  width: 1.3rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform 500ms ease;
+}
+.questions-container .questions .answer {
+  color: white;
+  background-color: #303030;
+  margin-top: 0.1rem;
+  padding: 1.5rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  display: none;
+  transition: all 400ms ease;
+}
+.questions-container .questions .question button:focus + .answer {
+  display: block;
+}
+.questions-container .questions .question button:focus > svg {
+  transform: translateY(-50%);
 }
